@@ -7,13 +7,13 @@ console.log(displayVal);
 for(let eachButton of allButtons){ 
 
     eachButton.addEventListener('click', function(e){
-            if(eachButton.value == 'C'){
+            if(eachButton.innerText === 'C'){
                 //clear the display
                 displayVal.innerText = '';
             }
-            else if(eachButton.value == '='){
+            else if(eachButton.innerText === '='){
                 //eval display then push to display
-                displayVal.innerText = eval(displayVal.inerText);
+                displayVal.innerText = eval(displayVal.innerText);
             }
             else{
                 //add button press to display string
@@ -23,5 +23,6 @@ for(let eachButton of allButtons){
         );
     };
 
+console.log(clr.innerText);
 
 
