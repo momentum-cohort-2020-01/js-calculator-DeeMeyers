@@ -6,21 +6,34 @@
 
 body{
     display: flex;
+    /* align-items: center; */
+    /* align-content: center; */
     justify-content: center;
-    align-items: center;
-
-.calc{
-    height: 500px;
-    width: 500px;
+    
 }
 
+.calc{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+    height: 500px;
+    width: 400px;
+}
 .button{
     background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
     height: 100px;
+    width: 100px;
+}
+.display{
+    height: 100px;
+    width: 300px;
+}
+.block{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .opp{
